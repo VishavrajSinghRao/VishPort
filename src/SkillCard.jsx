@@ -259,6 +259,7 @@ const SkillCard = React.forwardRef((props, ref) => {
                   boxShadow: `0px 4px 12px ${skill.color}`,
                 }}
                 whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1.1, boxShadow: `0px 4px 16px ${skill.color}` }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >

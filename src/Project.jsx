@@ -29,13 +29,17 @@ const Project = React.forwardRef((props, ref) => {
         {/* Grid Container */}
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ x: "-100%", opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="relative group border bg-gradient-to-br from-gray-800 to-black rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-opacity-50 hover:border-cyan-400"
-            >
+           <motion.div
+           key={index}
+           initial={{ x: "-100%", opacity: 0 }}
+           animate={isInView ? { x: 0, opacity: 1 } : {}}
+           transition={{ duration: 0.8, delay: index * 0.2 }}
+           whileHover={{ scale: 1.05, borderColor: "#22D3EE" }} // Normal Hover
+           whileTap={{ scale: 1.05, borderColor: "#22D3EE" }} // Mobile Tap Effect
+           className="relative group border bg-gradient-to-br from-gray-800 to-black rounded-xl overflow-hidden shadow-lg 
+                      transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-opacity-50 hover:border-cyan-400 
+                      active:scale-105 active:border-cyan-400 focus:scale-105 focus:border-cyan-400"
+         >         
               {/* Project Image */}
               <img src={project.image} alt={project.title} className="w-full h-60 object-cover" />
 
