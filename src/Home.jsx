@@ -86,14 +86,15 @@ const Home = () => {
 
         {/* Text Section */}
         <div className="flex flex-col items-center mt-16">
-          <span className="text-transparent text-7xl font-bold pr-24 lg:mt-16 lg:mr-24 bg-gradient-to-r from-white to-black bg-clip-text">
+          <span className="text-transparent md:text-7xl font-bold pr-24 lg:mt-16 lg:mr-24 bg-gradient-to-r from-white to-black bg-clip-text text-5xl">
             Hi There,
           </span>
-          <span className="text-transparent bg-gradient-to-r from-white to-gray-900 bg-clip-text font-bold text-7xl pl-8 whitespace-nowrap lg:mr-24">
+          <span className="text-transparent bg-gradient-to-r from-white to-gray-900 bg-clip-text font-bold md:text-7xl  whitespace-nowrap lg:mr-24 text-5xl md:pl-10 md:ml-0 -ml-2 " >
             I'm Vishavraj
           </span>
 
-          <span className="text-4xl mt-12 bg-gradient-to-r from-white to-gray-900 text-transparent bg-clip-text whitespace-nowrap lg:ml-4 ml-32">
+
+          <span className="md:text-4xl text-2xl mt-12 md:mt-12 bg-gradient-to-r from-white to-gray-900 text-transparent bg-clip-text whitespace-nowrap lg:ml-4 md:ml-32 ml-12">
   {Array.from("I am into Full Stack Development").map((char, index) => (
     <motion.span
       key={index}
@@ -120,22 +121,22 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.4}}
-        className="flex justify-center items-center gap-10 mt-16 mr-20 lg:-mt-16 lg:mr-120"
+        className="flex justify-center items-center gap-10 mt-16 md:mr-20 lg:-mt-16 lg:mr-[550px] mr-10"
       >
         <a href="https://github.com/VishavrajSinghRao" target="_blank">
-          <FaGithub className="text-3xl text-white" />
+          <FaGithub className="md:text-3xl text-white text-2xl" />
         </a>
         <a href="mailto:rv931563@gm">
-          <img src="/email.png"className="h-8 w-8" />
+          <img src="/email.png"className="md:h-8 md:w-8 h-4 w-4" />
         </a>
         <a href="https://www.linkedin.com/in/vishavraj-singh-rao-405a26292/" target="_blank">
-        <img src="/linkedin-94.png" className="h-8 w-8" />
+        <img src="/linkedin-94.png" className="md:h-8 md:w-8 h-4 w-4" />
         </a>
         <a href="https://x.com/__03_vishal__" target="_blank">
-          <img src="/twt.png" className="h-8 w-8 filter invert hue-rotate-180" />
+          <img src="/twt.png" className="md:h-8 md:w-8 h- w-4 filter invert hue-rotate-180" />
         </a>
         <a href="/src/assets/RESUME VISH.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="/resume.png" className="h-8 w-8" />
+        <img src="/resume.png" className="md:h-8 md:w-8 h-4 w-4" />
         </a>
       </motion.div>
 
@@ -144,7 +145,7 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="flex justify-center items-center mt-12 mr-48 lg:mr-152 lg:mt-12"
+        className="flex justify-center items-center mt-12 md:mr-48 lg:mr-[655px] lg:mt-12 mr-24"
       >
         <button
           onClick={scroll}

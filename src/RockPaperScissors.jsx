@@ -31,7 +31,7 @@ const RockPaperScissors = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-6 rounded-lg shadow-md -mt-8 ">
+    <div className="flex flex-col items-center p-6 rounded-lg shadow-md mt-10 ">
       <h2 className="text-white text-2xl font-bold mb-4">Rock Paper Scissors</h2>
 
       {/* Choices Buttons */}
