@@ -63,21 +63,21 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="lg:flex lg:flex-row-reverse items-center justify-center lg:mt-10"
+        className="lg:flex lg:flex-row-reverse items-center justify-center lg:-mt-15 -mt-15 "
       >
         {/* Logo Circle */}
         <div className="flex justify-center items-center mt-45 lg:mt-55 group relative">
   {/* Default Image (Before Hover) */}
   <img 
     className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 opacity-100 group-hover:opacity-0"  
-    src="/src/assets/images/logo.webp" 
+    src="/src/assets/logo.webp" 
     alt="Logo"
   />
 
   {/* Second Image (After Hover) */}
   <img 
     className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"  
-    src="/src/assets/images/logo.jpg" 
+    src="/src/assets/logo.jpg" 
     alt="Logo Hover"
   />
 </div>
@@ -126,16 +126,16 @@ const Home = () => {
           <FaGithub className="text-3xl text-white" />
         </a>
         <a href="mailto:rv931563@gm">
-          <img src="/src/assets/images/email.png"className="h-8 w-8" />
+          <img src="/src/assets/email.png"className="h-8 w-8" />
         </a>
         <a href="https://www.linkedin.com/in/vishavraj-singh-rao-405a26292/" target="_blank">
-        <img src="/src/assets/images/linkedin-94.png" className="h-8 w-8" />
+        <img src="/src/assets/linkedin-94.png" className="h-8 w-8" />
         </a>
         <a href="https://x.com/__03_vishal__" target="_blank">
-          <img src="/src/assets/images/twt.png" className="h-8 w-8 filter invert hue-rotate-180" />
+          <img src="/src/assets/twt.png" className="h-8 w-8 filter invert hue-rotate-180" />
         </a>
         <a href="/src/assets/RESUME VISH.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/images/resume.png" className="h-8 w-8" />
+        <img src="/src/assets/resume.png" className="h-8 w-8" />
         </a>
       </motion.div>
 

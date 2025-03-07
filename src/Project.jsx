@@ -3,12 +3,12 @@ import { motion, useInView } from "framer-motion";
 
 const Project = React.forwardRef((props, ref) => {
   const projects = [
-    { title: "Real-Time Tracking", image: "/src/assets/images/real.webp", codeLink: "https://github.com/VishavrajSinghRao/REAL-TIME-TRACKING.git"/*, demoLink: ""*/ },
-    { title: "NEXA", image: "/src/assets/images/nexa.webp", codeLink: "https://github.com/VishavrajSinghRao/NEXA.git", demoLink: "https://vishavrajsinghrao.github.io/NEXA/" },
-    { title: "LeetMetric", image: "/src/assets/images/leetmetric.webp", codeLink: "https://github.com/VishavrajSinghRao/LeetMetric.git", demoLink: "https://vishavrajsinghrao.github.io/LeetMetric/" },
-    { title: "Paste-App", image: "/src/assets/images/DALL·E 2025-03-06 23.41.58 - A modern, dark-themed Paste App interface. The design features a sleek text editor with syntax highlighting, a 'Paste' button, and a copy link option.webp", codeLink: "https://github.com/VishavrajSinghRao/PASTE-APP.git", demoLink: "#" },
-    { title: "Portfolio", image: "/src/assets/images/vish.webp", codeLink: "#", demoLink: "#" },
-    { title: "Chess-Game", image: "/src/assets/images/chess.webp", codeLink: "https://github.com/VishavrajSinghRao/CHESS-GAME.git", demoLink: "#" },
+    { title: "Real-Time Tracking", image: "/src/assets/real.webp", codeLink: "https://github.com/VishavrajSinghRao/REAL-TIME-TRACKING.git"/*, demoLink: ""*/ },
+    { title: "NEXA", image: "/src/assets/nexa.webp", codeLink: "https://github.com/VishavrajSinghRao/NEXA.git", demoLink: "https://vishavrajsinghrao.github.io/NEXA/" },
+    { title: "LeetMetric", image: "/src/assets/leetmetric.webp", codeLink: "https://github.com/VishavrajSinghRao/LeetMetric.git", demoLink: "https://vishavrajsinghrao.github.io/LeetMetric/" },
+    { title: "Paste-App", image: "/src/assets/DALL·E 2025-03-06 23.41.58 - A modern, dark-themed Paste App interface. The design features a sleek text editor with syntax highlighting, a 'Paste' button, and a copy link option.webp", codeLink: "https://github.com/VishavrajSinghRao/PASTE-APP.git", demoLink: "#" },
+    { title: "Portfolio", image: "/src/assets/vish.webp", codeLink: "#", demoLink: "#" },
+    { title: "Chess-Game", image: "/src/assets/chess.webp", codeLink: "https://github.com/VishavrajSinghRao/CHESS-GAME.git", demoLink: "#" },
   ];
 
   const sectionRef = useRef(null);

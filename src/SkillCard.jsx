@@ -8,34 +8,34 @@ const skillsData = [
    
   {
     name: "Docker",
-    icon: "/src/assets/images/docker-svgrepo-com.svg",
+    icon: "/src/assets/docker-svgrepo-com.svg",
     color: "#2496ED", 
   },
   {
     name: "Express Js",
-    icon: "/src/assets/images/icons8-express-js.svg", 
+    icon: "/src/assets/icons8-express-js.svg", 
     color: "#AAAAAA",
     invert: true,
   },
   {
     name: "Linux",
-    icon: "/src/assets/images/linux-svgrepo-com.svg",
+    icon: "/src/assets/linux-svgrepo-com.svg",
     color: "#FCC624",
   },
   {
     name: "MongoDB",
-    icon: "/src/assets/images/mongo-svgrepo-com.svg",
+    icon: "/src/assets/mongo-svgrepo-com.svg",
     color: "#47A248",
   },
   {
     name: "Git",
-    icon: "/src/assets/images/git-svgrepo-com.svg",
+    icon: "/src/assets/git-svgrepo-com.svg",
     color: "#F05032",
   },
 
   {
     name: "GitHub",
-    icon: "/src/assets/images/github.svg",
+    icon: "/src/assets/github.svg",
     color: "#AAAAAA",
     invert: true,
   },
@@ -43,111 +43,111 @@ const skillsData = [
   
   {
     name: "Postman",
-    icon: "/src/assets/images/postman-icon-svgrepo-com.svg",
+    icon: "/src/assets/postman-icon-svgrepo-com.svg",
     color: "#FF6C37", 
   },
   {
     name: "Socket.io",
-    icon: "/src/assets/images/socket-dot-io-svgrepo-com.svg", 
+    icon: "/src/assets/socket-dot-io-svgrepo-com.svg", 
     color: "#AAAAAA",
     invert: true,
   },
   {
     name: "TS",
-    icon: "/src/assets/images/icons8-typescript.svg", 
+    icon: "/src/assets/icons8-typescript.svg", 
     color: "#3178C6",
     
   },
   {
     name: "VS Code",
-    icon: "/src/assets/images/icons8-visual-studio.svg", 
+    icon: "/src/assets/icons8-visual-studio.svg", 
     color: "#33A8FF",
     
   },
   {
     name: "React",
-    icon: "/src/assets/images/react-javascript-js-framework-facebook-svgrepo-com.svg",
+    icon: "/src/assets/react-javascript-js-framework-facebook-svgrepo-com.svg",
     color: "#61DAFB",
   },
 
   
   {
     name: "Redux",
-    icon: "/src/assets/images/icons8-redux (1).svg", 
+    icon: "/src/assets/icons8-redux (1).svg", 
     color: "#764ABC",
   
   },
   
   {
     name: "Tailwind",
-    icon: "/src/assets/images/tailwind-svgrepo-com.svg",
+    icon: "/src/assets/tailwind-svgrepo-com.svg",
     color: "#06B6D4",
   },
   {
     name: "Canva",
-    icon: "/src/assets/images/canva-svgrepo-com.svg", 
+    icon: "/src/assets/canva-svgrepo-com.svg", 
     color: "#FFFFFF",
     invert: true,
   },
   {
     name: "NPM",
-    icon: "/src/assets/images/npm-svgrepo-com.svg", 
+    icon: "/src/assets/npm-svgrepo-com.svg", 
     color: "#CB3837",
   },
   {
     name: "Nodemon",
-    icon: "/src/assets/images/nodemon-svgrepo-com.svg", 
+    icon: "/src/assets/nodemon-svgrepo-com.svg", 
     color: "#76D04B",
   },
  
   {
     name: "Solidity",
-    icon: "/src/assets/images/light-solidity-svgrepo-com.svg", 
+    icon: "/src/assets/light-solidity-svgrepo-com.svg", 
     color: "#AAA9A9",
     invert: true,
   },
   {
     name: "React Router",
-    icon: "/src/assets/images/reactrouter-svgrepo-com.svg", 
+    icon: "/src/assets/reactrouter-svgrepo-com.svg", 
     color: "#AAAAAA",
     invert: true,
   },
   
   {
     name: "Node JS",
-    icon: "/src/assets/images/node-js-svgrepo-com.svg", 
+    icon: "/src/assets/node-js-svgrepo-com.svg", 
     color: "#339933",
   },
   {
     name: "Gitlab",
-    icon: "/src/assets/images/gitlab-svgrepo-com.svg",
+    icon: "/src/assets/gitlab-svgrepo-com.svg",
     color: "#FC6D26",
   },
   {
     name: "HTML",
-    icon: "/src/assets/images/html-5-svgrepo-com.svg",
+    icon: "/src/assets/html-5-svgrepo-com.svg",
     color: "#E34F26",
   },
   {
     name: "CSS",
-    icon: "/src/assets/images/css-3-svgrepo-com.svg",
+    icon: "/src/assets/css-3-svgrepo-com.svg",
     color: "#1572B6",
   },
   {
     name: "JS",
-    icon:"/src/assets/images/icons8-js.svg",
+    icon:"/src/assets/icons8-js.svg",
     color: "#F7DF1E",
     
   },
   {
     name: "Python",
-    icon: "/src/assets/images/python-svgrepo-com.svg",
+    icon: "/src/assets/python-svgrepo-com.svg",
     color: "#3776AB",
   },
 
   {
     name: "Vercel",
-    icon: "/src/assets/images/vercel-svgrepo-com.svg", 
+    icon: "/src/assets/vercel-svgrepo-com.svg", 
     color: "#AAAAAA", 
     invert: true,
   },
