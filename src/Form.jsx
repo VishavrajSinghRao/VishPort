@@ -27,7 +27,7 @@ const Form = React.forwardRef((props, ref) => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-gradient-to-r from-gray-800 to-black rounded-xl shadow-md mt-50">
+    <div className="max-w-lg mx-auto p-4 bg-gradient-to-r from-gray-800 to-black rounded-xl shadow-md mt-48">
       <h2 className="text-xl text-white font-semibold mb-4">Let's Connect</h2>
       <form 
         onSubmit={handleSubmit} 
@@ -58,7 +58,7 @@ const Form = React.forwardRef((props, ref) => {
           placeholder="Enter your message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full p-2 border border-gray-300 rounded mt-5 min-h-50"
+          className="w-full p-2 border border-gray-300 rounded mt-4 min-h-50"
           rows="4"
         />
         <button

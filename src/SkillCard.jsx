@@ -8,34 +8,34 @@ const skillsData = [
    
   {
     name: "Docker",
-    icon: "/src/assets/docker-svgrepo-com.svg",
+    icon: "/docker-svgrepo-com.svg",
     color: "#2496ED", 
   },
   {
     name: "Express Js",
-    icon: "/src/assets/icons8-express-js.svg", 
+    icon: "/icons8-express-js.svg", 
     color: "#AAAAAA",
     invert: true,
   },
   {
     name: "Linux",
-    icon: "/src/assets/linux-svgrepo-com.svg",
+    icon: "/linux-svgrepo-com.svg",
     color: "#FCC624",
   },
   {
     name: "MongoDB",
-    icon: "/src/assets/mongo-svgrepo-com.svg",
+    icon: "/mongo-svgrepo-com.svg",
     color: "#47A248",
   },
   {
     name: "Git",
-    icon: "/src/assets/git-svgrepo-com.svg",
+    icon: "/git-svgrepo-com.svg",
     color: "#F05032",
   },
 
   {
     name: "GitHub",
-    icon: "/src/assets/github.svg",
+    icon: "/github.svg",
     color: "#AAAAAA",
     invert: true,
   },
@@ -43,111 +43,111 @@ const skillsData = [
   
   {
     name: "Postman",
-    icon: "/src/assets/postman-icon-svgrepo-com.svg",
+    icon: "/postman-icon-svgrepo-com.svg",
     color: "#FF6C37", 
   },
   {
     name: "Socket.io",
-    icon: "/src/assets/socket-dot-io-svgrepo-com.svg", 
+    icon: "/socket-dot-io-svgrepo-com.svg", 
     color: "#AAAAAA",
     invert: true,
   },
   {
     name: "TS",
-    icon: "/src/assets/icons8-typescript.svg", 
+    icon: "/icons8-typescript.svg", 
     color: "#3178C6",
     
   },
   {
     name: "VS Code",
-    icon: "/src/assets/icons8-visual-studio.svg", 
+    icon: "/icons8-visual-studio.svg", 
     color: "#33A8FF",
     
   },
   {
     name: "React",
-    icon: "/src/assets/react-javascript-js-framework-facebook-svgrepo-com.svg",
+    icon: "/react-javascript-js-framework-facebook-svgrepo-com.svg",
     color: "#61DAFB",
   },
 
   
   {
     name: "Redux",
-    icon: "/src/assets/icons8-redux (1).svg", 
+    icon: "/icons8-redux (1).svg", 
     color: "#764ABC",
   
   },
   
   {
     name: "Tailwind",
-    icon: "/src/assets/tailwind-svgrepo-com.svg",
+    icon: "/tailwind-svgrepo-com.svg",
     color: "#06B6D4",
   },
   {
     name: "Canva",
-    icon: "/src/assets/canva-svgrepo-com.svg", 
+    icon: "/canva-svgrepo-com.svg", 
     color: "#FFFFFF",
     invert: true,
   },
   {
     name: "NPM",
-    icon: "/src/assets/npm-svgrepo-com.svg", 
+    icon: "/npm-svgrepo-com.svg", 
     color: "#CB3837",
   },
   {
     name: "Nodemon",
-    icon: "/src/assets/nodemon-svgrepo-com.svg", 
+    icon: "/nodemon-svgrepo-com.svg", 
     color: "#76D04B",
   },
  
   {
     name: "Solidity",
-    icon: "/src/assets/light-solidity-svgrepo-com.svg", 
+    icon: "/light-solidity-svgrepo-com.svg", 
     color: "#AAA9A9",
     invert: true,
   },
   {
     name: "React Router",
-    icon: "/src/assets/reactrouter-svgrepo-com.svg", 
+    icon: "/reactrouter-svgrepo-com.svg", 
     color: "#AAAAAA",
     invert: true,
   },
   
   {
     name: "Node JS",
-    icon: "/src/assets/node-js-svgrepo-com.svg", 
+    icon: "/node-js-svgrepo-com.svg", 
     color: "#339933",
   },
   {
     name: "Gitlab",
-    icon: "/src/assets/gitlab-svgrepo-com.svg",
+    icon: "/gitlab-svgrepo-com.svg",
     color: "#FC6D26",
   },
   {
     name: "HTML",
-    icon: "/src/assets/html-5-svgrepo-com.svg",
+    icon: "/html-5-svgrepo-com.svg",
     color: "#E34F26",
   },
   {
     name: "CSS",
-    icon: "/src/assets/css-3-svgrepo-com.svg",
+    icon: "/css-3-svgrepo-com.svg",
     color: "#1572B6",
   },
   {
     name: "JS",
-    icon:"/src/assets/icons8-js.svg",
+    icon:"/icons8-js.svg",
     color: "#F7DF1E",
     
   },
   {
     name: "Python",
-    icon: "/src/assets/python-svgrepo-com.svg",
+    icon: "/python-svgrepo-com.svg",
     color: "#3776AB",
   },
 
   {
     name: "Vercel",
-    icon: "/src/assets/vercel-svgrepo-com.svg", 
+    icon: "/vercel-svgrepo-com.svg", 
     color: "#AAAAAA", 
     invert: true,
   },
@@ -250,7 +250,7 @@ const SkillCard = React.forwardRef((props, ref) => {
           </p>
 
           {/* Skills Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8">
             {skillsData.map((skill, index) => (
               <motion.div
                 key={index}
@@ -265,7 +265,7 @@ const SkillCard = React.forwardRef((props, ref) => {
                  <img
                   src={skill.icon}
                   alt={skill.name}
-                  className={`w-16 h-16 mb-2 object-contain ${
+                  className={`w-16 h-16 mb-4 object-contain ${
                     skill.invert ? "filter invert" : ""
                   }`}
                 />

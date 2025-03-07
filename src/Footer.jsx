@@ -4,11 +4,11 @@ import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaMedium, FaPaperclip
 
 const Footer = React.forwardRef((props,ref) => {
   return (
-    <footer className="mt-30 text-white py-8 lg:ml-60">
+    <footer className="mt-28 text-white py-8 lg:ml-58">
     <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center lg:items-start text-center lg:text-left">
       
       {/* Left Section - Name & About */}
-      <div className="lg:w-1/3 mb-6 lg:mb-0">
+      <div className="lg:w-1/3 mb-4 lg:mb-0">
         <h2 className="text-2xl font-bold whitespace-nowrap">Vishavraj Singh Rao</h2>
         <p className="text-blue-400 text-lg">FullStack Developer</p>
         <p className="mt-3 text-gray-300">
@@ -18,7 +18,7 @@ const Footer = React.forwardRef((props,ref) => {
       </div>
 
       {/* Middle Section - Quick Links */}
-      <div className="lg:w-1/3 mb-6 lg:mb-0">
+      <div className="lg:w-1/3 mb-4 lg:mb-0">
         <h3 className="text-xl font-semibold">Quick Links</h3>
         <ul className="mt-3 space-y-2">
           {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
@@ -32,7 +32,7 @@ const Footer = React.forwardRef((props,ref) => {
       {/* Right Section - Contact Info */}
       <div className="lg:w-1/3">
         <h3 className="text-xl font-semibold">Contact info</h3>
-        <div className="mt-3 space-y-2">
+        <div className="mt-2 space-y-2">
           <p className="flex items-center justify-center lg:justify-start space-x-2">
            <img src="/src/assets/images/email.png"className="h-5 w-5" />
             <span>rv931563@gmail.com</span>
@@ -64,7 +64,7 @@ const Footer = React.forwardRef((props,ref) => {
     </div>
 
     {/* Copyright */}
-    <div className="text-gray-400 mt-6 border-t border-gray-700  pt-4 text-center lg:mr-55">
+    <div className="text-gray-400 mt-4 border-t border-gray-700  pt-4 text-center lg:mr-52">
       © 2024 - 2025 | All Rights Reserved
     </div>
 

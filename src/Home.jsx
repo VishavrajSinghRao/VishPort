@@ -63,21 +63,21 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="lg:flex lg:flex-row-reverse items-center justify-center lg:-mt-15 -mt-15 "
+        className="lg:flex lg:flex-row-reverse items-center justify-center lg:-mt-12 -mt-12 "
       >
         {/* Logo Circle */}
-        <div className="flex justify-center items-center mt-45 lg:mt-55 group relative">
+        <div className="flex justify-center items-center mt-44 lg:mt-56 group relative">
   {/* Default Image (Before Hover) */}
   <img 
     className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 opacity-100 group-hover:opacity-0"  
-    src="/src/assets/logo.webp" 
+    src="/logo.webp" 
     alt="Logo"
   />
 
   {/* Second Image (After Hover) */}
   <img 
     className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"  
-    src="/src/assets/logo.jpg" 
+    src="/logo.jpg" 
     alt="Logo Hover"
   />
 </div>
@@ -85,15 +85,15 @@ const Home = () => {
 
 
         {/* Text Section */}
-        <div className="flex flex-col items-center mt-15">
-          <span className="text-transparent text-7xl font-bold pr-25 lg:mt-13 lg:mr-24 bg-gradient-to-r from-white to-black bg-clip-text">
+        <div className="flex flex-col items-center mt-16">
+          <span className="text-transparent text-7xl font-bold pr-24 lg:mt-16 lg:mr-24 bg-gradient-to-r from-white to-black bg-clip-text">
             Hi There,
           </span>
-          <span className="text-transparent bg-gradient-to-r from-white to-gray-900 bg-clip-text font-bold text-7xl pl-9 whitespace-nowrap lg:mr-25">
+          <span className="text-transparent bg-gradient-to-r from-white to-gray-900 bg-clip-text font-bold text-7xl pl-8 whitespace-nowrap lg:mr-24">
             I'm Vishavraj
           </span>
 
-          <span className="text-4xl mt-10 bg-gradient-to-r from-white to-gray-900 text-transparent bg-clip-text whitespace-nowrap lg:ml-5 ml-30">
+          <span className="text-4xl mt-12 bg-gradient-to-r from-white to-gray-900 text-transparent bg-clip-text whitespace-nowrap lg:ml-4 ml-32">
   {Array.from("I am into Full Stack Development").map((char, index) => (
     <motion.span
       key={index}
@@ -120,22 +120,22 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.4}}
-        className="flex justify-center items-center gap-10 mt-15 mr-20 lg:-mt-14 lg:mr-125"
+        className="flex justify-center items-center gap-10 mt-16 mr-20 lg:-mt-16 lg:mr-120"
       >
         <a href="https://github.com/VishavrajSinghRao" target="_blank">
           <FaGithub className="text-3xl text-white" />
         </a>
         <a href="mailto:rv931563@gm">
-          <img src="/src/assets/email.png"className="h-8 w-8" />
+          <img src="/email.png"className="h-8 w-8" />
         </a>
         <a href="https://www.linkedin.com/in/vishavraj-singh-rao-405a26292/" target="_blank">
-        <img src="/src/assets/linkedin-94.png" className="h-8 w-8" />
+        <img src="/linkedin-94.png" className="h-8 w-8" />
         </a>
         <a href="https://x.com/__03_vishal__" target="_blank">
-          <img src="/src/assets/twt.png" className="h-8 w-8 filter invert hue-rotate-180" />
+          <img src="/twt.png" className="h-8 w-8 filter invert hue-rotate-180" />
         </a>
         <a href="/src/assets/RESUME VISH.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/resume.png" className="h-8 w-8" />
+        <img src="/resume.png" className="h-8 w-8" />
         </a>
       </motion.div>
 
@@ -144,7 +144,7 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="flex justify-center items-center mt-15 mr-49 lg:mr-155 lg:mt-12"
+        className="flex justify-center items-center mt-12 mr-48 lg:mr-152 lg:mt-12"
       >
         <button
           onClick={scroll}
