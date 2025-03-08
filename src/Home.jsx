@@ -54,7 +54,7 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="font-bold font-[Poppins] bg-gradient-to-r from-white to-black text-7xl bg-clip-text drop-shadow-[0_0_0.5px_white] -mt-12"
+        className="font-bold font-[Poppins] bg-gradient-to-r from-white to-black md:text-7xl text-5xl  bg-clip-text drop-shadow-[0_0_0.5px_white] -mt-12"
       >
        VishPort
       </motion.h1>
@@ -69,32 +69,33 @@ const Home = () => {
         {/* Logo Circle */}
      
         <div className="flex justify-center items-center mt-44 lg:mt-56 group relative">
-  {/* Default Image (Before Hover or Tap) */}
-  <img 
-    className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 opacity-100 group-hover:opacity-0"
-    src="/logo.webp"
+  {/* Default Image (Before Hover) */}
+  <motion.img 
+    className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 group-focus:rotate-y-180 group-active:rotate-y-180 opacity-100 group-hover:opacity-0"  
+    src="/logo.webp" 
     alt="Logo"
-    onClick={(e) => e.target.classList.toggle("rotate-y-180")} // Enables tap flip on mobile
+    whileTap={{ rotateY: 180 }} // Flip on tap for mobile
   />
 
-  {/* Second Image (After Hover or Tap) */}
-  <img 
-    className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"
-    src="/logo.jpg"
+  {/* Second Image (After Hover) */}
+  <motion.img 
+    className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"  
+    src="/logo.jpg" 
     alt="Logo Hover"
-    onClick={(e) => e.target.classList.toggle("rotate-y-0")} // Enables tap flip on mobile
+    whileTap={{ rotateY: 0 }} // Flip back on tap
   />
 </div>
 
 
 
 
+
         {/* Text Section */}
         <div className="flex flex-col items-center mt-16">
-          <span className="text-transparent md:text-7xl font-bold pr-24 lg:mt-16 lg:mr-24 bg-gradient-to-r from-white to-black bg-clip-text text-5xl">
+          <span className="text-transparent md:text-7xl font-bold pr-24 lg:mt-16 lg:mr-28 bg-gradient-to-r from-white to-black bg-clip-text text-5xl">
             Hi There,
           </span>
-          <span className="text-transparent bg-gradient-to-r from-white to-gray-900 bg-clip-text font-bold md:text-7xl  whitespace-nowrap lg:mr-24 text-5xl md:pl-10 md:ml-0 -ml-2 " >
+          <span className="text-transparent bg-gradient-to-r from-white to-gray-900 bg-clip-text font-bold md:text-7xl  whitespace-nowrap lg:mr-24 text-5xl md:pl-10 md:-ml-4 -ml-3 " >
             I'm Vishavraj
           </span>
 
