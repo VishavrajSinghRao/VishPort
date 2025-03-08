@@ -51,10 +51,10 @@ const Home = () => {
       
       {/* Portfolio Title with Animation */}
       <motion.h1
-        initial={{ x: "-100%", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="font-bold font-[Poppins] bg-gradient-to-r from-white to-black md:text-7xl text-5xl  bg-clip-text drop-shadow-[0_0_0.5px_white] -mt-12"
+        className="font-bold  font-[Poppins] bg-gradient-to-r from-white to-black md:text-7xl text-5xl  bg-clip-text drop-shadow-[0_0_0.5px_white] -mt-12"
       >
        VishPort
       </motion.h1>
@@ -74,7 +74,8 @@ const Home = () => {
     className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 group-focus:rotate-y-180 group-active:rotate-y-180 opacity-100 group-hover:opacity-0"  
     src="/logo.webp" 
     alt="Logo"
-    whileTap={{ rotateY: 180 }} // Flip on tap for mobile
+    animate={{ rotateY: 0 }} 
+    whileTap={{ rotateY: 180, opacity: 0 }} // Flip on tap for mobile
   />
 
   {/* Second Image (After Hover) */}
@@ -82,7 +83,8 @@ const Home = () => {
     className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"  
     src="/logo.jpg" 
     alt="Logo Hover"
-    whileTap={{ rotateY: 0 }} // Flip back on tap
+    animate={{ rotateY: 180 }}
+    whileTap={{ rotateY: 0 , opacity: 1}} // Flip back on tap
   />
 </div>
 
