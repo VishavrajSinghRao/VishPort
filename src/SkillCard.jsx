@@ -244,7 +244,7 @@ const SkillCard = React.forwardRef((props, ref) => {
     >
       <div className="text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-2">Skills</h2>
+          <h2 className="text-4xl font-bold mb-2 font-[Poppins]">Skills</h2>
           <p className="text-lg text-gray-400 mb-8">
             These are the Technologies I&apos;ve worked with
           </p>

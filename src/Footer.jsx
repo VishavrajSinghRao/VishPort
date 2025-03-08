@@ -9,7 +9,7 @@ const Footer = React.forwardRef((props,ref) => {
       
       {/* Left Section - Name & About */}
       <div className="lg:w-1/3 mb-4 lg:mb-0">
-        <h2 className="text-2xl font-bold whitespace-nowrap">Vishavraj Singh Rao</h2>
+        <h2 className="text-2xl font-bold whitespace-nowrap font-[Poppins]">Vishavraj Singh Rao</h2>
         <p className="text-blue-400 text-lg">FullStack Developer</p>
         <p className="mt-3 text-gray-300">
           <br />
@@ -34,7 +34,7 @@ const Footer = React.forwardRef((props,ref) => {
         <h3 className="text-xl font-semibold">Contact info</h3>
         <div className="mt-2 space-y-2">
           <p className="flex items-center justify-center lg:justify-start space-x-2">
-           <img src="/src/assets/images/email.png"className="h-5 w-5" />
+           <img src="/email.png"className="h-5 w-5" />
             <span>rv931563@gmail.com</span>
           </p>
           <p className="flex items-center justify-center lg:justify-start space-x-2">

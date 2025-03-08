@@ -7,7 +7,7 @@ const About = React.forwardRef((props, ref) => {
 
   return (
     <motion.div ref={ref} className="mt-24 sm:mt-44">
-      <h1 className="text-3xl sm:text-4xl md:ml-4 sm:ml-24 mt-20 sm:mt-60 lg:ml-[530px] text-white font-bold">
+      <h1 className=" font-[Poppins] text-3xl sm:text-4xl md:ml-4 sm:ml-24 mt-20 sm:mt-60 lg:ml-[530px] text-white font-bold">
         About Me
       </h1>
 

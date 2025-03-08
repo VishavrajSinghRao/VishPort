@@ -6,6 +6,7 @@ import Project from './Project';
 import SkillCard from './SkillCard';
 import Form from './Form';
 import Footer from './Footer';
+import './index.css'
 
 
 const Home = () => {
@@ -53,7 +54,7 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="font-bold bg-gradient-to-r from-white to-black text-7xl bg-clip-text drop-shadow-[0_0_0.5px_white] -mt-12"
+        className="font-bold font-[Poppins] bg-gradient-to-r from-white to-black text-7xl bg-clip-text drop-shadow-[0_0_0.5px_white] -mt-12"
       >
        VishPort
       </motion.h1>
@@ -66,21 +67,25 @@ const Home = () => {
         className="lg:flex lg:flex-row-reverse items-center justify-center lg:-mt-12 -mt-12 "
       >
         {/* Logo Circle */}
+     
         <div className="flex justify-center items-center mt-44 lg:mt-56 group relative">
-  {/* Default Image (Before Hover) */}
+  {/* Default Image (Before Hover or Tap) */}
   <img 
-    className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 opacity-100 group-hover:opacity-0"  
-    src="/logo.webp" 
+    className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 opacity-100 group-hover:opacity-0"
+    src="/logo.webp"
     alt="Logo"
+    onClick={(e) => e.target.classList.toggle("rotate-y-180")} // Enables tap flip on mobile
   />
 
-  {/* Second Image (After Hover) */}
+  {/* Second Image (After Hover or Tap) */}
   <img 
-    className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"  
-    src="/logo.jpg" 
+    className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"
+    src="/logo.jpg"
     alt="Logo Hover"
+    onClick={(e) => e.target.classList.toggle("rotate-y-0")} // Enables tap flip on mobile
   />
 </div>
+
 
 
 
@@ -121,22 +126,22 @@ const Home = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.4}}
-        className="flex justify-center items-center gap-10 mt-16 md:mr-20 lg:-mt-16 lg:mr-[550px] mr-10"
+        className="flex justify-center items-center gap-10 mt-16 md:mr-20 lg:-mt-16 lg:mr-[550px] mr-8"
       >
         <a href="https://github.com/VishavrajSinghRao" target="_blank">
-          <FaGithub className="md:text-3xl text-white text-2xl" />
+          <FaGithub className="md:text-3xl text-white text-[16px]" />
         </a>
         <a href="mailto:rv931563@gm">
           <img src="/email.png"className="md:h-8 md:w-8 h-4 w-4" />
         </a>
         <a href="https://www.linkedin.com/in/vishavraj-singh-rao-405a26292/" target="_blank">
-        <img src="/linkedin-94.png" className="md:h-8 md:w-8 h-4 w-4" />
+        <img src="/linkedin-94.png" className="md:h-8 md:w-8 h-5 w-5" />
         </a>
         <a href="https://x.com/__03_vishal__" target="_blank">
-          <img src="/twt.png" className="md:h-8 md:w-8 h- w-4 filter invert hue-rotate-180" />
+          <img src="/twt.png" className="md:h-8 md:w-8 h-5 w-5 filter invert hue-rotate-180" />
         </a>
         <a href="/src/assets/RESUME VISH.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="/resume.png" className="md:h-8 md:w-8 h-4 w-4" />
+        <img src="/resume.png" className="md:h-8 md:w-8 h-5 w-5" />
         </a>
       </motion.div>
 
