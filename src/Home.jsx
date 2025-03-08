@@ -68,29 +68,23 @@ const Home = () => {
       >
         {/* Logo Circle */}
      
-        <div className="flex justify-center items-center mt-44 lg:mt-56 relative">
-  {/* Default Image (Before Flip) */}
+        <div className="flex justify-center items-center mt-44 lg:mt-56 group relative">
+  {/* Default Image (Before Hover) */}
   <motion.img 
-    className="w-90 h-90 border rounded-full transition-transform duration-500 transform opacity-100 absolute"  
+    className="w-90 h-90 border rounded-full transition-transform duration-500 transform group-hover:rotate-y-180 group-focus:rotate-y-180 group-active:rotate-y-180 opacity-100 group-hover:opacity-0"  
     src="/logo.webp" 
     alt="Logo"
-    animate={{ rotateY: 0 }} // Default state
-    whileHover={{ rotateY: 180, opacity: 0 }} // Flip effect on hover (Desktop)
-    whileTap={{ rotateY: 180, opacity: 0 }} // Flip effect on tap (Mobile)
+    whileTap={{ rotateY: 180 }} // Flip on tap for mobile
   />
 
-  {/* Second Image (After Flip) */}
+  {/* Second Image (After Hover) */}
   <motion.img 
-    className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 absolute"  
+    className="w-90 h-90 border rounded-full transition-all duration-500 transform rotate-y-180 opacity-0 group-hover:opacity-100 absolute"  
     src="/logo.jpg" 
     alt="Logo Hover"
-    animate={{ rotateY: 180 }} // Default state (flipped)
-    whileHover={{ rotateY: 0, opacity: 1 }} // Flip back effect on hover (Desktop)
-    whileTap={{ rotateY: 0, opacity: 1 }} // Flip back effect on tap (Mobile)
+    whileTap={{ rotateY: 0 }} // Flip back on tap
   />
 </div>
-
-
 
 
 
